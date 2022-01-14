@@ -1,0 +1,18 @@
+// Cookie consent
+
+
+$(document).ready(function(){
+  // Check if consent cookie is present
+  if($.cookie('consent')) {
+    var cookieval = $.cookie('consent');
+    console.log(cookieval);
+  } else {
+    // Insert cookie messge bar
+    $('body').prepend("<p id='consent-bar' style='margin: 0; padding: 0; width: calc(100% - 20px); background-color: #544a4a; color: white; font-size: 12px; padding: 10px; text-align: center;'><span style='width: 860px; display: block; margin: 0 auto;'>We use cookies to personalise content and ads and to analyse our traffic. We also share information about your use of our site with our advertising and analytics partners who may combine it with other information you’ve provided to them or they’ve collected from your use of their services. <a href='/privacy#cookies' style='color: white; text-decoration: underline;'>Learn more</a> <span id='consent-close' style='background-color: #808080; color: #fff; padding: 3px 7px; border-radius: 4px; margin: 0 0 0 15px; text-decoration: none; font-size: 10px; font-weight: bold; text-transform: uppercase; cursor: pointer;'>Close</span></span></p>");
+  }
+
+  $("#consent-close").click(function() {
+    $.cookie('consent', "1", { path: '/' });
+    $("#consent-bar").remove();
+  });
+});

@@ -1,0 +1,11 @@
+img {
+  border-radius: 1rem;
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.productA {
+  border-radius: 1rem;
+  margin: 1rem;
+}

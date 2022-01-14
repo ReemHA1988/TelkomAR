@@ -1,0 +1,66 @@
+* {
+  width: 100%;
+}
+
+.main-card {
+  position: relative;
+  background-color: #bd0a0af5;
+  color: whitesmoke;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnDes {
+  padding: 10px 30px;
+  border-radius: 3px;
+  width: 200px;
+  transition-duration: 0.4s;
+}
+
+.btnDes:hover {
+  color: blue;
+}
+
+.oprRow {
+  color: #bd0a0af5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 1em;
+}
+
+.cardDes {
+  width: 100%;
+  background-color: rgba(204, 185, 185, 0.808);
+}
+
+h2.card-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+
+.img.card-img-top {
+  width: 15px;
+  height: 15px;
+}
+
+.cardBox {
+  height: 300px;
+}
+
+h5.card-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
